@@ -10,4 +10,12 @@ public class HelloWorldApplication {
 		SpringApplication.run(HelloWorldApplication.class, args);
 	}
 
+@RestController
+public class MyController {
+
+    @GetMapping(path="/")
+    public String hello(){
+        return "Goto Mars unless It is occupied by aliens. Then go to Jupiter.";
+    }
+
 }
