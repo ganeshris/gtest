@@ -11,7 +11,7 @@ public class HelloWorldApplication {
 	}
 
 @RestController
-public class MyController {
+public class HelloWorld {
 
     @GetMapping(path="/")
     public String hello(){
