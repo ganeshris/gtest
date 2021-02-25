@@ -34,6 +34,13 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<archive>
+					    <manifest>
+						<mainClass>com.example.HelloWorld.HelloWorldApplication</mainClass>
+					    </manifest>
+					</archive>
+          			 </configuration>
 			</plugin>
 		</plugins>
 	</build>
