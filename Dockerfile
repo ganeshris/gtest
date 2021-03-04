@@ -1,5 +1,6 @@
 FROM java:8-jdk-alpine
-COPY ./gtest/target/HelloWorld-0.0.1-SNAPSHOT.jar /usr/app/gtest.jar
+RUN mkdir /usr/app
+COPY ./gtest.jar /usr/app
 WORKDIR /usr/app
 EXPOSE 8087
-ENTRYPOINT ["java", "-jar", "/gtest.jar"]
+ENTRYPOINT ["java", "-jar", "gtest.jar"]
